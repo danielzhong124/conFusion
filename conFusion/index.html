@@ -37,12 +37,13 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-6 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-6 col-sm-6 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                    <a role="button" class="btn-sm btn-warning" href="#reserve">Reserve</a>
                 </div>
             </div>
         </div>
@@ -54,7 +55,7 @@
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class-"col col-sm order-sm-first col-md">
+            <div class="col col-sm order-sm-first col-md">
               <div class="media">
                   <img class="d-flex mr-3 img-thumbnail align-self-center"
                           src="img/uthappizza.png" alt="Uthappizza">
@@ -63,9 +64,8 @@
                          <span class="badge badge-danger">HOT</span>
                          <span class="badge badge-pill badge-secondary">$4.99</span>
                       </h2>
-                      <p class="d-none d-sm-block">
-                        A unique combination of Indian Uthappam (pancake) and
-                        Italian pizza, topped with Cerignola olives, ripe vine
+                      <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake)
+                        and Italian pizza, topped with Cerignola olives, ripe vine
                           cherry tomatoes, Vidalia onion, Guntur chillies and
                           Buffalo Paneer.
                       </p>
@@ -80,8 +80,20 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                 <div class="media">
+                     <img class="d-flex mr-3 img-thumbnail align-self-center"
+                             src="img/buffet.png" alt="Uthappizza">
+                     <div class="media-body">
+                         <h2 class="mt-0">Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                         </h2>
+                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a
+                           choice of five different salads, six enticing appetizers, six main
+                           entrees and five choicest desserts. Free flowing
+                           bubbly and soft drinks. All for just $19.99 per person.
+                         </p>
+                     </div>
+                   </div>
             </div>
         </div>
 
@@ -106,18 +118,46 @@
             </div>
         </div>
 
-        <div class="row row-content justify-content-center">
-          <div class="col-12 col-sm-8">
+        <div id="reserve" class="row row-content justify-content-center align-items-center">
+          <div  class="col-12 col-sm-8">
               <div class="card">
                   <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                   <div class="card-body">
 
                     <div class="form-group row">
-                      <label for="1" class="col-form-label">1</label>
-                      <input type="radio" class="form-control" id="1" name="number">
+                      <label for="numberGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                      <form id="numberGuests" class="col-md-10">
+                        <input type="radio" id="1" name="numberGuests" value=1>
+                        <label for="1">1</label>
+                        <input type="radio" id="2" name="numberGuests" value=2>
+                        <label for="2">2</label>
+                        <input type="radio" id="3" name="numberGuests" value=3>
+                        <label for="3">3</label>
+                        <input type="radio" id="4" name="numberGuests" value=4>
+                        <label for="4">4</label>
+                        <input type="radio" id="5" name="numberGuests" value=5>
+                        <label for="5">5</label>
+                        <input type="radio" id="6" name="numberGuests" value="6">
+                        <label for="6">6</label>
+                      </form>
                     </div>
 
+                    <div class="form-group row">
+                      <label class="col-md-2 col-form-label">Date and Time</label>
+                      <div class="col-4">
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                      </div>
+                      <div class="col-4">
+                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                      </div>
                   </div>
+
+                  <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                      <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                  </div>
+
               </div>
           </div>
         </div>

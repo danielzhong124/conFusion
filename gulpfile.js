@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
     flatmap = require('gulp-flatmap'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
     browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
